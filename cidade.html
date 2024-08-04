@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Maranhão
+    </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll(".city-button");
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const cidadeId = button.getAttribute('data-id');
+                    window.location.href = `cidades.html?cidade=${cidadeId}`;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cidades do Maranhão</h1>
+    </header>
+    <main>
+        <div class="button-container">
+            <a class="city-button" role="button" data-id="1">São Luís</a>
+            <a class="city-button" role="button" data-id="2">Santo Amaro</a>
+            <a class="city-button" role="button" data-id="3">Riachão</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Guia Turístico do Maranhão. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

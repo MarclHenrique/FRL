@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Maranhão
+    </title>
+    <link rel="stylesheet" href="css/stylesregiao.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll(".buttonFiltro");
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const regiaoId = button.getAttribute('data-id');
+                    window.location.href = `atrativosRegiao.html?regiao=${regiaoId}`;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Explora Maranhão
+    </h1>
+    <div id="Information"></div>
+    <button class="buttonFiltro" role="button" data-id="1">Norte</button>
+    <button class="buttonFiltro" role="button" data-id="3">Sul</button>
+    <button class="buttonFiltro" role="button" data-id="2">Leste</button>
+</body>
+</html>

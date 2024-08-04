@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    text-align: center; /* Centraliza o texto dentro do body */
+    padding: 1rem; /* Adiciona um pouco de padding nas bordas */
+    background-image: url("/imagens/vista-aerea-centro-historico-sao-luis.jpg");
+
+}
+
+/* Cabeçalho */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+}
+
+/* Container principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 1rem;
+}
+
+/* Estilo dos botões */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 1rem; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte em telas menores */
+}
+
+.buttonFiltro {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem; /* Adiciona margem para espaçamento entre os botões */
+}
+
+.buttonFiltro:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .buttonFiltro {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
