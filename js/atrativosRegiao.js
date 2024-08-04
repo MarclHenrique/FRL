@@ -27,7 +27,7 @@ function displayAtrativos(atrativos) {
             <h3>${atrativo.nome || 'Nome não disponível'}</h3>
             <img src="${atrativo.img_atrativo}" alt="${atrativo.nome}" />
             <p>${atrativo.descricao || 'Descrição não disponível'}</p>
-            <button class="buttonFiltro" role="button" onclick="window.location.href='index.html'">venha-conhecer</button>
+            <button class="buttonFiltro" role="button" onclick="window.location.href='index.html'">venha conhecer</button>
         `;
         
         Information.appendChild(atrativoElement);
